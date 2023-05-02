@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { HomeIcon } from "@heroicons/react/24/outline";
+import { gigs } from "../../data";
+import GigCard from "../../components/gigcard/GigCard";
 
 const Gigs = () => {
   const [sort, setSort] = useState("sales");
   const [open, setOpen] = useState(false);
+  const [openBudget, setOpenBudget] = useState(false);
 
   const reSort = (type) => {
     setSort(type);
@@ -27,7 +30,7 @@ const Gigs = () => {
           Explore the boundaries of art and technology with lancerr's AI artists
         </p>
         <div className="flex items-center justify-between mb-5">
-          <div className="flex items-center space-x-2.5 text-[#555] font-light">
+          <div className=" hidden lg:flex items-center space-x-2.5 text-[#555] font-light">
             <span className="text-base font-semibold text-gray-900">
               Budget
             </span>
@@ -45,6 +48,65 @@ const Gigs = () => {
               Apply
             </button>
           </div>
+          {/* dropdown menu */}
+          <div className="relative">
+            <div className=" flex lg:hidden font-semibold items-center gap-2.5 border border-solid rounded-md cursor-pointer py-3 px-6 ">
+              Budget
+              <span>
+                <ChevronDownIcon
+                  className="w-4 h-4 stroke-current cursor-pointer stroke-2"
+                  onClick={() => setOpenBudget(!openBudget)}
+                />
+              </span>
+            </div>
+            {openBudget && (
+              <div className=" absolute lg:hidden top-[100%] left-0 mt-2 border rounded-lg shadow z-10 border-[#e4e5e7] bg-white">
+                <div className=" top-0 relative max-h-[284px] p-6  ">
+                  <div className="flex">
+                    <div className="mr-3 flex flex-col mb-3 text-sm">
+                      <label
+                        className="text-[#95979d] text-xs font-semibold leading-6 mb-1  "
+                        htmlFor="Min"
+                      >
+                        MIN
+                      </label>
+                      <input
+                        className=" w-full min-h-[36px] min-w-[120px] border border-[#dadbdd] rounded text-[#404145] py-2 px-3 "
+                        type="text"
+                        placeholder="Any"
+                      />
+                    </div>
+                    <div className=" flex flex-col mb-3 text-sm">
+                      <label
+                        className="text-[#95979d] text-xs font-semibold leading-6 mb-1  "
+                        htmlFor="Min"
+                      >
+                        Max
+                      </label>
+                      <input
+                        className=" w-full min-h-[36px] min-w-[120px] border border-[#dadbdd] rounded text-[#404145] py-2 px-3 "
+                        type="text"
+                        placeholder="Any"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex py-3 px-6 items-center justify-between gap-4 border-t border-t-[#e4e5e7] ">
+                  <button className=" w-max font-semibold text-base items-center ">
+                    Clear All
+                  </button>
+                  <button
+                    className="bg-black text-white font-semibold text-base rounded-md py-3 px-6 items-center"
+                    onClick={() => setOpenBudget(!openBudget)}
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* ***************************************** */}
           <div className="flex items-center relative space-x-2.5">
             <span className=" font-normal text-base text-[#62646a] ">
               Sort By
@@ -57,7 +119,7 @@ const Gigs = () => {
               onClick={() => setOpen(!open)}
             />
             {open && (
-              <div className=" absolute p-5 border-[0.5px] border-[lightgray] bg-white rounded-md top-7 right-0 flex flex-col space-y-5 text-[#555]">
+              <div className=" z-10 absolute p-5 border-[0.5px] border-[lightgray] bg-white rounded-md top-7 right-0 flex flex-col space-y-5 text-[#555]">
                 {sort === "sales" ? (
                   <span
                     onClick={() => reSort("createdAt")}
@@ -75,6 +137,15 @@ const Gigs = () => {
                 )}
               </div>
             )}
+          </div>
+        </div>
+        <div className="flex flex-col flex-wrap ">
+          <div className=" flex flex-row w-full  ">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-4 mt-4 ">
+              {gigs.map((gig) => (
+                <GigCard key={gig.id} item={gig} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
