@@ -5,8 +5,8 @@ import { StarIcon, HeartIcon } from "@heroicons/react/24/solid";
 const GigCard = ({ item }) => {
   return (
     <Link to="/gig/123">
-      <div className="w-full min-w-[245px] bg-white border border-solid border-[#e4e5e7] flex flex-col">
-        <div className="relative h-0 overflow-hidden pb-[56.25%]">
+      <div className=" rounded-lg shadow hover:shadow-lg w-full min-w-[245px] bg-white border border-solid border-[#e4e5e7] flex flex-col">
+        <div className=" rounded-t-lg relative h-0 overflow-hidden pb-[56.25%]">
           <img
             className="absolute inset-0 w-full h-full object-cover"
             src={item.img}

@@ -44,13 +44,13 @@ const Gigs = () => {
               type="text"
               placeholder="max"
             />
-            <button className="bg-black text-white font-semibold text-base rounded-md py-3 px-6 items-center">
+            <button className="bg-black shadow-lg text-white font-semibold text-base rounded-md py-3 px-6 items-center">
               Apply
             </button>
           </div>
           {/* dropdown menu */}
           <div className="relative">
-            <div className=" flex lg:hidden font-semibold items-center gap-2.5 border border-solid rounded-md cursor-pointer py-3 px-6 ">
+            <div className=" shadow flex lg:hidden font-semibold items-center gap-2.5 border border-solid rounded-md cursor-pointer py-3 px-6 ">
               Budget
               <span>
                 <ChevronDownIcon

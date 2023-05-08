@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="text-[#999] my-[50px] ">
-      <div className="mx-auto max-w-screen-xl px-4 lg:px-4">
+      <div className="mx-auto max-w-screen-xl px-4">
         <div className="flex justify-between">
           <div className="flex flex-col gap-5">
             <h2 className=" text-medium font-medium text-black">Categories</h2>
