@@ -16,7 +16,7 @@ const Gigs = () => {
 
   return (
     <div className=" py-8 sm:py-10">
-      <div className="mx-auto flex flex-col max-w-screen-xl px-4 lg:px-4 space-y-4">
+      <div className="mx-auto flex flex-col max-w-screen-xl px-4 space-y-4">
         <div className="flex items-center">
           <HomeIcon className="w-4 h-4 mr-2 " />
           <span className="text-sm font-normal justify-center text-[#404145] mr-2">

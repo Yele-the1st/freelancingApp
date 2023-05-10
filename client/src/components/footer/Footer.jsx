@@ -4,71 +4,64 @@ const Footer = () => {
   return (
     <div className="text-[#999] my-[50px] ">
       <div className="mx-auto max-w-screen-xl px-4">
-        <div className="flex justify-between">
-          <div className="flex flex-col gap-5">
-            <h2 className=" text-medium font-medium text-black">Categories</h2>
-            <span className="text-sm">Graphics & Design</span>
-            <span className="text-sm">Digital Marketing</span>
-            <span className="text-sm">Writing & Translation</span>
-            <span className="text-sm">Video & Animation</span>
-            <span className="text-sm">Music & Audio</span>
-            <span className="text-sm">Programming & Tech</span>
-            <span className="text-sm">Data</span>
-            <span className="text-sm">Business</span>
-            <span className="text-sm">Lifestyle</span>
-            <span className="text-sm">Photography</span>
-            <span className="text-sm">Sitemap</span>
-          </div>
-          <div className="flex flex-col gap-5">
-            <h2 className=" text-medium font-medium text-black">About</h2>
-            <span className="text-sm">Press & News</span>
-            <span className="text-sm">Partnerships</span>
-            <span className="text-sm">Privacy Policy</span>
-            <span className="text-sm">Terms of Service</span>
-            <span className="text-sm">Intellectual Property Claims</span>
-            <span className="text-sm">Investor Relations</span>
-            <span className="text-sm">Contact Sales</span>
-          </div>
-          <div className="flex flex-col gap-5">
-            <h2 className=" text-medium font-medium text-black">Support</h2>
-            <span className="text-sm">Help & Support</span>
-            <span className="text-sm">Trust & Safety</span>
-            <span className="text-sm">Selling on Liverr</span>
-            <span className="text-sm">Buying on Liverr</span>
-          </div>
-          <div className="flex flex-col gap-5">
-            <h2 className=" text-medium font-medium text-black">Community</h2>
-            <span className="text-sm">Customer Success Stories</span>
-            <span className="text-sm">Community hub</span>
-            <span className="text-sm">Forum</span>
-            <span className="text-sm">Events</span>
-            <span className="text-sm">Blog</span>
-            <span className="text-sm">Influencers</span>
-            <span className="text-sm">Affiliates</span>
-            <span className="text-sm">Podcast</span>
-            <span className="text-sm">Invite a Friend</span>
-            <span className="text-sm">Become a Seller</span>
-            <span className="text-sm">Community Standards</span>
-          </div>
-          <div className="flex flex-col gap-5">
-            <h2 className=" text-base font-medium text-black">
-              More From Fiverr
-            </h2>
-            <span className="text-sm">Liverr Business</span>
-            <span className="text-sm">Liverr Pro</span>
-            <span className="text-sm">Liverr Logo Maker</span>
-            <span className="text-sm">Liverr Guides</span>
-            <span className="text-sm">Get Inspired</span>
-            <span className="text-sm">Liverr Select</span>
-            <span className="text-sm">ClearVoice</span>
-            <span className="text-sm">Liverr Workspace</span>
-            <span className="text-sm">Learn</span>
-            <span className="text-sm">Working Not Working</span>
+        <div className=" flex items-center justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-20">
+            <div className="flex flex-col gap-5">
+              <h2 className=" text-medium font-medium text-black">
+                Categories
+              </h2>
+              <span className="text-sm">Graphics & Design</span>
+              <span className="text-sm">Digital Marketing</span>
+              <span className="text-sm">Writing & Translation</span>
+              <span className="text-sm">Video & Animation</span>
+              <span className="text-sm">Music & Audio</span>
+              <span className="text-sm">Programming & Tech</span>
+              <span className="text-sm">More</span>
+            </div>
+            <div className="flex flex-col gap-5">
+              <h2 className=" text-medium font-medium text-black">About</h2>
+              <span className="text-sm">Press & News</span>
+              <span className="text-sm">Partnerships</span>
+              <span className="text-sm">Privacy Policy</span>
+              <span className="text-sm">Terms of Service</span>
+              <span className="text-sm">Intellectual Property Claims</span>
+              <span className="text-sm">Investor Relations</span>
+              <span className="text-sm">Contact Sales</span>
+            </div>
+            <div className="flex flex-col gap-5">
+              <h2 className=" text-medium font-medium text-black">Support</h2>
+              <span className="text-sm">Help & Support</span>
+              <span className="text-sm">Trust & Safety</span>
+              <span className="text-sm">Selling on Liverr</span>
+              <span className="text-sm">Buying on Liverr</span>
+            </div>
+            <div className="flex flex-col gap-5">
+              <h2 className=" text-medium font-medium text-black">Community</h2>
+              <span className="text-sm">Customer Success Stories</span>
+              <span className="text-sm">Community hub</span>
+              <span className="text-sm">Forum</span>
+              <span className="text-sm">Events</span>
+            </div>
+            <div className="flex flex-col gap-5">
+              <h2 className=" text-base font-medium text-black">
+                More From Fiverr
+              </h2>
+              <span className="text-sm">Liverr Business</span>
+              <span className="text-sm">Liverr Pro</span>
+              <span className="text-sm">Liverr Logo Maker</span>
+              <span className="text-sm">Liverr Guides</span>
+              <span className="text-sm">Get Inspired</span>
+              <span className="text-sm">Liverr Select</span>
+              <span className="text-sm">ClearVoice</span>
+              <span className="text-sm">Liverr Workspace</span>
+              <span className="text-sm">Learn</span>
+              <span className="text-sm">Working Not Working</span>
+            </div>
           </div>
         </div>
         <hr className=" my-10 h-0 border border-gray-200" />
-        <div className=" flex items-center justify-between ">
-          <div className="flex items-center gap-5 ">
+        <div className=" grid md:grid-cols-2 gap-10 ">
+          <div className="flex md:justify-start justify-center items-center gap-5 ">
             <h2 className=" text-base font-medium text-black">lancerr</h2>
             <span className=" text-sm ">© Liverr International Ltd. 2023</span>
           </div>

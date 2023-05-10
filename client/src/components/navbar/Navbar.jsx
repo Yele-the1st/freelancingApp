@@ -148,6 +148,7 @@ const Navbar = () => {
             <Link to="/">Business</Link>
             <Link to="/">Lifestyle</Link>
           </div>
+          <hr className="w-full border-none h-0 lg:border-[0.5px] lg:border-solid border-gray-300" />
         </>
       )}
     </div>

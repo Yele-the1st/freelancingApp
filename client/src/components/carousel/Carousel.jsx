@@ -11,7 +11,7 @@ const Carousel = ({ children, name: title }) => {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [
