@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   ChevronDownIcon,
   MagnifyingGlassIcon,
@@ -33,9 +34,10 @@ const Messages = () => {
                 </button>
               </div>
             </header>
+
             <section className=" relative overflow-y-auto overflow-x-hidden pb-12 h-full w-full  ">
-              <a
-                href=""
+              <Link
+                to="/message/123"
                 className=" absolute z-20 h-[80px] top-0 left-0 right-0 border-b border-b-[#e4e5e7] flex justify-between w-full p-4 "
               >
                 <span
@@ -98,10 +100,10 @@ const Messages = () => {
                     </button>
                   </div>
                 </aside>
-              </a>
+              </Link>
             </section>
           </aside>
-          {/* <div className=" flex flex-col items-center w-full h-full justify-center  ">
+          <div className="hidden md:flex flex-col items-center w-full h-full justify-center  ">
             <div
               class="h-[200px] mb-[32px] w-full bg-no-repeat bg-bottom"
               style={{
@@ -117,12 +119,12 @@ const Messages = () => {
             <small className=" max-w-[330px] text-base font-normal my-2.5 mx-auto px-5 ">
               Select a conversation and chat away
             </small>
-          </div> */}
-          <div
+          </div>
+          {/* <div
             className=" hidden md:flex flex-col flex-1 overflow-hidden "
             aria-label="conversations"
           >
-            <header className="relative h-[70px] w-full border-b border-b-[#e4e5e7] pt-[14px] pl-[20px] ">
+            <header className="relative min-h-[70px] h-[70px] w-full border-b border-b-[#e4e5e7] pt-[14px] pl-[20px] ">
               <div className=" flex justify-between items-center w-full  ">
                 <div className=" flex items-center ">
                   <span className=" relative w-5 h-5 rounded-full bg-[#b5b6ba] border-white border-[2px]">
@@ -195,7 +197,7 @@ const Messages = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

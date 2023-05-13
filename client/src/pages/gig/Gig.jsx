@@ -11,6 +11,7 @@ import {
 import SingleCarousel from "../../components/singleCarousel/SingleCarousel";
 import Card from "../../components/card/Card";
 import { cards, projects } from "../../data";
+import { Link } from "react-router-dom";
 
 const Gig = () => {
   return (
@@ -77,9 +78,11 @@ const Gig = () => {
                   <StarIcon className=" w-3.5 h-3.5" />
                   <span className=" font-bold text-sm text-[#ffc108]">5</span>
                 </div>
-                <button className="bg-black text-white font-semibold text-base rounded-md py-3 px-6 items-center">
-                  Contact Me
-                </button>
+                <Link to={`/messages`}>
+                  <button className="bg-black text-white font-semibold text-base rounded-md py-3 px-6 items-center">
+                    Contact Me
+                  </button>
+                </Link>
               </div>
             </div>
             <div className=" border border-[lightgray] rounded-[5px] p-5 mt-5 ">

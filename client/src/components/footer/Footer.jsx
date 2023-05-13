@@ -1,10 +1,15 @@
 import React from "react";
+import {
+  CurrencyDollarIcon,
+  GlobeAltIcon,
+  ArrowUpCircleIcon,
+} from "@heroicons/react/24/outline";
 
 const Footer = () => {
   return (
     <div className="text-[#999] my-[50px] ">
       <div className="mx-auto max-w-screen-xl px-4">
-        <div className=" flex items-center justify-center">
+        <div className="flex">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-20">
             <div className="flex flex-col gap-5">
               <h2 className=" text-medium font-medium text-black">
@@ -60,60 +65,62 @@ const Footer = () => {
           </div>
         </div>
         <hr className=" my-10 h-0 border border-gray-200" />
-        <div className=" grid md:grid-cols-2 gap-10 ">
-          <div className="flex md:justify-start justify-center items-center gap-5 ">
-            <h2 className=" text-base font-medium text-black">lancerr</h2>
-            <span className=" text-sm ">© Liverr International Ltd. 2023</span>
+        <div className=" flex items-center flex-wrap justify-between">
+          <div className=" w-full md:w-auto md:flex-row flex pt-4 items-center flex-col lg:flex-row ">
+            <span>
+              <h2 className=" text-2xl font-bold">Lancerr</h2>
+            </span>
+            <span className=" flex flex-col items-center text-[#b5b6ba] font-light text-sm ">
+              <p className=" mt-2 ml-6 tracking-wide whitespace-nowrap ">
+                © Liverr International Ltd. 2023
+              </p>
+            </span>
           </div>
-          <div className=" flex items-center gap-7 ">
-            <div className="flex items-center gap-5 ">
+          <div className=" flex items-center flex-col md:flex-row pt-4 w-full md:w-auto md:justify-between">
+            <div className="flex justify-center pb-4 md:w-auto md:pr-8 md:pb-0  w-full ">
               <img
-                className=" w-6 h-6 "
+                className=" w-6 h-6 mr-6 "
                 src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg"
                 alt=""
               />
               <img
-                className=" w-6 h-6 "
+                className=" w-6 h-6 mr-6"
                 src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
                 alt=""
               />
               <img
-                className=" w-6 h-6 "
+                className=" w-6 h-6 mr-6"
                 src="https://cdn-icons-png.flaticon.com/512/179/179330.png?w=1380&t=st=1682869728~exp=1682870328~hmac=74c24fcba34b46ac69f9616f1058fbd94c0170052b1cfd2db888eaa1a5b1cbb7"
                 alt=""
               />
               <img
-                className=" w-6 h-6 "
+                className=" w-6 h-6 mr-6"
                 src="https://cdn-icons-png.flaticon.com/512/733/733566.png?w=1380&t=st=1682869634~exp=1682870234~hmac=71c19527d86e6926531c39e24dd480d68597190d11c36a02a64f05754716a077"
                 alt=""
               />
               <img
-                className=" w-6 h-6 "
+                className=" w-6 h-6"
                 src="https://cdn-icons-png.flaticon.com/512/733/733558.png?w=996&t=st=1682869801~exp=1682870401~hmac=57980a4b2f2b6150fa303b6d12b5cd49721afe9ab1dda47e70e23f1c167c8f98"
                 alt=""
               />
             </div>
-            <div className="flex items-center gap-5">
-              <img
-                className=" w-6 h-6 "
-                src="https://cdn-icons-png.flaticon.com/512/15/15948.png?w=996&t=st=1682869835~exp=1682870435~hmac=864c858bcffd06193daea4801f74d9a05f3fc8066cc026972a0e969406dcebc7"
-                alt=""
-              />
-              <span className=" text-sm ">English</span>
+            <div className=" flex ">
+              <div className=" mr-1 ">
+                <button className=" py-2 px-3 font-semibold text-[#74767e] flex items-center ">
+                  <GlobeAltIcon className=" w-7 h-7 pr-2" />
+                  <span className=" text-sm ">English</span>
+                </button>
+              </div>
+              <div className="mr-1">
+                <button className=" py-2 px-3 font-semibold text-[#74767e] flex items-center ">
+                  <CurrencyDollarIcon className="w-7 h-7 pr-2" />
+                  <span className=" text-sm ">USD</span>
+                </button>
+              </div>
+              <button className=" pl-2">
+                <ArrowUpCircleIcon className=" h-7 w-7" />
+              </button>
             </div>
-            <div className="flex items-center gap-5">
-              <img
-                className=" w-6 h-6 "
-                src="https://cdn-icons-png.flaticon.com/512/991/991952.png?w=996&t=st=1682869961~exp=1682870561~hmac=61ceb5cd5ab09e0507d547b98393394996304735ac8a9c284bc329384c0f8320"
-                alt=""
-              />
-              <span className=" text-sm ">USD</span>
-            </div>
-            <img
-              className=" w-6 h-6 "
-              src="https://cdn-icons-png.flaticon.com/512/46/46462.png?w=996&t=st=1682869995~exp=1682870595~hmac=b46ee82086cbe6fcfccc3cad1e10a398bebd745241d761d7a503fb6bd4988868"
-              alt=""
-            />
           </div>
         </div>
       </div>
