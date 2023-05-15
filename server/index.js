@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
+import passport from "passport";
 
 import userRoute from "./routes/user.route.js";
 import gigRoute from "./routes/gig.route.js";
@@ -12,12 +13,14 @@ import conversationRoute from "./routes/conversation.route.js";
 import authRoute from "./routes/auth.route.js";
 
 const app = express();
+app.use(passport.initialize());
+import("./config/passport.config.js");
 
 dotenv.config();
 
 const connect = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_DB);
+    await mongoose.connect(process.env.MONGO_DB_DATABASE_URL);
     console.log("Connected to mongoDB Database");
   } catch (error) {
     console.log(error);
@@ -34,6 +37,13 @@ app.use("/api/orders", orderRoute);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
 app.use("/api/reviews", reviewRoute);
+
+app.use((err, req, res, next) => {
+  const errorStatus = err.status || 500;
+  const errorMessage = err.message || "Something went wrong!";
+
+  return res.status(errorStatus).send(errorMessage);
+});
 
 app.listen(8800, () => {
   connect();
