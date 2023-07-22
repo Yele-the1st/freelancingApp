@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import logo from "../../assets/logos/lancerr_logo.png";
 
 const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -32,11 +33,7 @@ const Navbar = () => {
     // ...
   };
 
-  const currentUser = {
-    id: 1,
-    username: "John Doe",
-    isSeller: true,
-  };
+  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   return (
     <div
@@ -44,11 +41,10 @@ const Navbar = () => {
         isActive || pathname !== "/" ? "bg-white" : "bg-[#FFFD63]"
       }`}
     >
-      <div className="max-w-screen-xl  flex flex-wrap items-center justify-between mx-auto p-4">
-        <div className="text-[30px] font-bold">
+      <div className="max-w-screen-xl  flex flex-wrap items-baseline justify-between mx-auto p-4">
+        <div className=" flex items-center ">
           <Link to={`/`}>
-            <span>Lancerr</span>
-            <span className="text-[#FFFD63]">.</span>
+            <img className=" w-[100px] h-auto" src={logo} alt="" />
           </Link>
         </div>
         <div className="space-x-6 items-center text-sm font-medium hidden lg:flex  ">
@@ -59,7 +55,7 @@ const Navbar = () => {
           {!currentUser?.isSeller && <span>Become a seller</span>}
         </div>
         {!currentUser?.isSeller && (
-          <div className="flex space-x-6 text-sm items-center font-medium">
+          <div className="flex space-x-6 text-sm items-baseline font-medium">
             <>
               <button
                 className={`py-3.5 px-3 rounded-xl hidden sm:block cursor-pointer duration-500 hover:shadow ${
@@ -69,7 +65,7 @@ const Navbar = () => {
                 Sign in
               </button>
               <button
-                className={`py-3.5 px-3 rounded-xl cursor-pointer shadow ${
+                className={`py-3.5 px-3 rounded-xl hidden sm:block  cursor-pointer shadow ${
                   isActive ? "bg-black text-white" : "bg-[#E6E45C]"
                 }`}
                 style={isHovered ? hoverStyle : normalStyle}
@@ -113,7 +109,7 @@ const Navbar = () => {
             }}
           >
             <img
-              src="https://media.istockphoto.com/id/1335941248/photo/shot-of-a-handsome-young-man-standing-against-a-grey-background.jpg?b=1&s=170667a&w=0&k=20&c=Dl9uxPY_Xn159JiazEj0bknMkLxFdY7f4tK1GtOGmis="
+              src={currentUser.img || AB}
               alt=""
               className="w-[32px] h-[32px] rounded-full object-cover"
             />
@@ -127,7 +123,7 @@ const Navbar = () => {
                   </>
                 )}
                 <Link to={`/orders`}>Orders</Link>
-                <Link to={`/messages`}>Messages</Link>
+                <Link to={`/app/messages`}>Messages</Link>
                 <Link to={`/logout`}>Logout</Link>
               </div>
             )}

@@ -1,6 +1,6 @@
 import express from "express";
 import { deleteUser } from "../controllers/user.controller.js";
-import { authErrorHandler, isAuthenticated } from "../middleware/auth.js";
+import { isAuthenticated } from "../middleware/auth.js";
 
 const router = express.Router();
 

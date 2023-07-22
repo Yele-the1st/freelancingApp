@@ -14,11 +14,11 @@ import {
 
 const Messages = () => {
   return (
-    <div className=" h-[650px] bg-[#F7F7F7]">
-      <div className=" h-full p-4">
-        <div className="h-full flex overflow-x-hidden  border bg-white shadow-lg ">
-          <aside className=" flex flex-col flex-grow md:flex-none w-[300px] overflow-y-hidden border-r border-r-[#e4e5e7]">
-            <header className="px-[15px] border-b border-b-[#e4e5e7] min-h-[70px] h-[70px] flex flex-col justify-center z-1">
+    <div className="h-[calc(100vh-85px)] bg-[#F7F7F7]">
+      <div className=" h-full lg:p-4">
+        <div className="h-full flex overflow-x-hidden  border bg-white lg:shadow-lg ">
+          <aside className=" h-full flex flex-col flex-grow md:flex-none w-[300px] overflow-y-hidden border-r border-r-[#e4e5e7]">
+            <header className=" px-[15px] border-b border-b-[#e4e5e7] min-h-[70px] h-[70px] flex flex-col justify-center z-1">
               <div className=" flex justify-between ">
                 <button className=" text-[#74767e] text-base overflow-visible  ">
                   <div className=" flex items-center ">
@@ -37,7 +37,7 @@ const Messages = () => {
 
             <section className=" relative overflow-y-auto overflow-x-hidden pb-12 h-full w-full  ">
               <Link
-                to="/message/123"
+                to="/app/message/123"
                 className=" absolute z-20 h-[80px] top-0 left-0 right-0 border-b border-b-[#e4e5e7] flex justify-between w-full p-4 "
               >
                 <span

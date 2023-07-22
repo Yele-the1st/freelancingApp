@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1279.2917"
+   height="282.15311"
+   viewBox="0 0 338.47927 74.653009"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="map1.png"
+   inkscape:export-xdpi="6.8048167"
+   inkscape:export-ydpi="6.8048167"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.27447917"
+     inkscape:cx="960"
+     inkscape:cy="541.02467"
+     inkscape:window-width="1046"
+     inkscape:window-height="791"
+     inkscape:window-x="394"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-84.760362,-105.5485)">
+    <g
+       id="g47209"
+       inkscape:export-filename="bitmap.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         id="g47200">
+        <g
+           id="g46250"
+           transform="translate(35.071372,21.085678)"
+           inkscape:export-filename="g46250.png"
+           inkscape:export-xdpi="6.8048167"
+           inkscape:export-ydpi="6.8048167">
+          <g
+             id="g34627"
+             transform="rotate(90,84.723637,121.78932)">
+            <path
+               id="rect21604"
+               d="M 81.255514,87.357315 H 122.05014 V 122.92625 A 33.858371,33.858371 0 0 1 88.191774,156.7846 h -40.79464 v -35.56892 a 33.858371,33.858371 0 0 1 33.85838,-33.858365 z"
+               style="opacity:1;fill:#fffd63;fill-opacity:1;stroke:none;stroke-width:10.4514;stroke-dasharray:none"
+               inkscape:transform-center-x="-1.3716108" />
+            <path
+               id="rect1530"
+               style="color:#000000;opacity:1;fill:#000000;stroke-width:0.495005;-inkscape-stroke:none"
+               d="m 81.681144,86.754677 c -18.88033,0 -34.28401,15.404443 -34.28401,34.284773 v 35.78452 h 9.1674 v -9.16817 -13.30804 -13.30831 c 0,-13.92565 11.19097,-25.116604 25.11661,-25.116604 h 31.200826 v 26.617144 c 0,13.92563 -11.19096,25.11581 -25.116596,25.11581 h -23.99747 v 9.16817 h 23.99747 c 18.880326,0 34.284766,-15.40368 34.284766,-34.28398 V 86.754677 Z m 14.82956,16.371783 v 35.06931 c 5.483126,-3.05056 9.167656,-8.89407 9.167656,-15.65579 v -19.41352 z m -16.37128,7.20311 v 30.12287 h 9.16792 v -30.12287 z m -16.37127,7.20336 v 22.91951 h 9.16792 v -22.91951 z"
+               inkscape:label="rect1530" />
+          </g>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:85.3184px;font-family:'Kohinoor Telugu';-inkscape-font-specification:'Kohinoor Telugu Bold';white-space:pre;inline-size:289.221;opacity:1;fill:#000000;fill-opacity:0.97549;stroke:none;stroke-width:93.3159;stroke-dasharray:none"
+             x="142.04968"
+             y="156.20126"
+             id="text31565"
+             transform="matrix(0.86419143,0,0,0.86488974,16.126532,23.207256)"><tspan
+               x="142.04968"
+               y="156.20126"
+               id="tspan43540"><tspan
+                 style="font-size:85.318px"
+                 id="tspan43538">lancerr</tspan></tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

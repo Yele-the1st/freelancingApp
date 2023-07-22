@@ -11,6 +11,7 @@ import orderRoute from "./routes/order.route.js";
 import reviewRoute from "./routes/review.route.js";
 import conversationRoute from "./routes/conversation.route.js";
 import authRoute from "./routes/auth.route.js";
+import cors from "cors";
 
 const app = express();
 app.use(passport.initialize());
@@ -27,6 +28,14 @@ const connect = async () => {
   }
 };
 
+app.use(
+  cors({
+    origin: "http://localhost:5173", // Allow requests from localhost:5173
+    methods: "*", // Allow all methods
+    allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept", // Allow specified headers
+    credentials: true, // Allow credentials (cookies, authorization headers)
+  })
+);
 app.use(express.json());
 app.use(cookieParser());
 

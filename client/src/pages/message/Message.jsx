@@ -16,8 +16,8 @@ import {
 
 const Message = () => {
   return (
-    <div className=" h-[670px] bg-[#F7F7F7]">
-      <div className=" h-full p-4">
+    <div className=" h-[calc(100vh-85px)] bg-[#F7F7F7]">
+      <div className=" h-full lg:p-4">
         <div className="h-full flex overflow-x-hidden  border bg-white shadow-lg ">
           <aside className=" hidden md:flex flex-col flex-grow md:flex-none w-[300px] overflow-y-hidden border-r border-r-[#e4e5e7]">
             <header className="px-[15px] border-b border-b-[#e4e5e7] min-h-[70px] h-[70px] flex flex-col justify-center z-1">

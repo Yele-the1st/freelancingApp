@@ -10,6 +10,7 @@ import Messages from "./pages/messages/Messages";
 import Message from "./pages/message/Message";
 import Add from "./pages/add/Add";
 import MyGigs from "./pages/myGigs/MyGigs";
+import Login from "./pages/login/Login";
 
 const App = () => {
   const Layout = () => {
@@ -21,6 +22,15 @@ const App = () => {
       </div>
     );
   };
+  const Layout1 = () => {
+    return (
+      <div className="app">
+        <Navbar />
+        <Outlet />
+      </div>
+    );
+  };
+
   const router = createBrowserRouter([
     {
       path: "/",
@@ -46,17 +56,38 @@ const App = () => {
           path: "/mygigs",
           element: <MyGigs />,
         },
-        {
-          path: "/message/:id",
-          element: <Message />,
-        },
+
         {
           path: "/add",
           element: <Add />,
         },
+
         {
-          path: "/messages",
+          path: "/",
+          element: <Home />,
+        },
+      ],
+    },
+    {
+      path: "/app/",
+      element: <Layout1 />,
+      children: [
+        {
+          path: "/app/messages",
           element: <Messages />,
+        },
+        {
+          path: "/app/message/:id",
+          element: <Message />,
+        },
+      ],
+    },
+    {
+      path: "/auth/",
+      children: [
+        {
+          path: "/auth/login",
+          element: <Login />,
         },
       ],
     },
